@@ -1,0 +1,87 @@
+body {
+	background-color: #282c34;
+}
+.App {
+	text-align: center;
+	flex-direction: column;
+}
+.App,
+.Calculator,
+.Results,
+.ButtonsContainer,
+.Button,
+.Numbers {
+	display: flex;
+}
+h1 {
+	color: white;
+}
+
+.Calculator {
+	margin: auto;
+	width: 254px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+	border: 1px solid rgba(135, 211, 124, 0.06);
+	box-shadow: inset 0 0 10px #000000;
+}
+
+.Results {
+	flex-direction: column;
+	background: rgba(42, 187, 155, 0.1);
+	width: 100%;
+	height: 60px;
+}
+.RomanResults {
+	height: 34px;
+}
+.RegularResults {
+	font-size: 10px;
+	max-height: 13px;
+	width: 100%;
+}
+.ButtonsContainer {
+	box-sizing: border-box;
+	background: rgba(0, 0, 0, 0.3);
+	padding: 3px;
+}
+.Numbers {
+	flex-wrap: wrap;
+	flex: 1 0 21%;
+}
+.ReStart {
+	background: #624433;
+}
+
+.Button {
+	color: white;
+	border-radius: 50%;
+	font-size: 23px;
+	margin: 1px;
+	height: 60px;
+	width: 60px;
+	cursor: pointer;
+	transition: all .2s;
+}
+.Button:hover {
+	transform: scale(1.05, 1.05);
+	background: rgba(37, 193, 23, 0.19) !important;
+}
+.Button:active {
+	background: rgb(91, 82, 82);
+	transform: scale(.9, .9);
+}
+span {
+	margin: auto;
+	height: 36px;
+}
+
+.ButtonNumber {
+	background: #787878;
+}
+.ButtonOperation {
+	background: #7f5200;
+}
